@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.spacer {
+    height: 28px;
+}
+
+/*--------------------------------------HEADER---------------------------------*/
+
+
+.div-header {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 1px 8px rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.div-header header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.div-header header nav {
+    display: flex;
+    align-items: center;
+}
+
+.div-header .div-menu {
+    width: 100%;
+}
+
+.div-header .div-menu #nav {
+    justify-content: space-between;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.nav-responsive {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.redes a {
+    text-align: right;
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 1px;
+    transition: .5s;
+}
+
+.redes a:hover {
+    color: rgb(161, 43, 240);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    --s: 200px;
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background: repeating-conic-gradient(from 30deg,
+            #0000 0 120deg,
+            var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(from 30deg,
+            var(--c1) 0 60deg,
+            var(--c2) 0 120deg,
+            var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s) * 0.577);
+}
+.relative-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.popup-container {
+    position: relative;
+    width: 100%;
+}
+
+.popup-menu {
+    top: 50px;
+    z-index: 9999;
+    width: 100%;
+    position: absolute;
+    background-color: #3c3c3cf8;
+    padding: 16px 0;
+}
+
+.popup-menu.hidden {
+    display: none;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    list-style: none;
+}
+
+.lista a {
+    text-align: left;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 12px;
+    transition: .5s;
+}
+
+.lista a:hover, .lista a:active {
+    color: rgb(30, 33, 255);
+}
+
+
+/*----------------------------------------INICIO---------------------------------------*/
+
+
+#inicio {
+    height: 420px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.inicio .div-banner {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.904);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .div-banner img {
+    margin-top: 40px;
+    border: 5px solid black;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .div-banner h2 {
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.inicio .div-banner h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(180, 180, 180);
+}
+
+
+/*-------------------------------------------SOBRE MI-------------------------------------------*/
+
+
+#sobremi {
+    background-color: rgba(255, 255, 255, 0.966);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.div-sobremi {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 28px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding: 15px 0;
+    transition: .5s;
+    cursor: default;
+}
+
+.sobremi h2:hover {
+    color: #4043ffd8;
+
+}
+
+.sobremi .div-sobremi p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col-datos {
+    width: 70%;
+}
+
+.sobremi .fila .col-objetivos {
+    width: 30%;
+}
+
+.div-objetivos .objetivos{
+    margin-top:10px;
+}
+
+.sobremi .fila .col-datos h3,
+.sobremi .fila .col-objetivos h3 {
+    font-size: 22px;
+    font-family: 'Raleway';
+    transition: .5s;
+    margin-bottom: 15px;
+    color: #ae35ffd7;
+}
+
+.sobremi .fila .col-datos h3:hover,
+.sobremi .fila .col-objetivos h3:hover {
+    cursor: default;
+}
+
+
+.sobremi .fila .col-datos ul {
+    list-style: none;
+}
+
+.sobremi .fila .col-datos ul li,
+.sobremi .fila .col-objetivos ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col-datos ul li strong {
+    display: inline-block;
+    width: 250px;
+}
+
+.sobremi .fila .col-datos ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+/*--------------------------------------------CURRÍCULUM------------------------------------------------*/
+
+
+#curriculum {
+    width: 85.5%;
+    background-color: #000000f5;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    position: relative;
+}
+
+.div-curriculum {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2 {
+    font-size: 28px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding: 15px 0;
+    transition: .5s;
+}
+
+
+.curriculum h2:hover {
+    color: #4043ffd8;
+    cursor: default;
+}
+
+.curriculum h3 {
+    font-size: 24px;
+    font-family: 'Raleway';
+    transition: .5s;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.curriculum .fila .col h4 {
+    font-size: 22px;
+    font-family: 'Raleway';
+    transition: .5s;
+    margin-bottom: 15px;
+}
+
+
+.div-explaboral .fila .col h4 {
+    display: inline-block;
+    width: 60%;
+    color: #c772ffd7;
+}
+
+.div-explaboral .fila .col p {
+    display: inline-block;
+    width: 20%;
+    color: #a3a3a3;
+}
+
+.div-empresa {
+    color: rgb(211, 211, 211);
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+.div-funciones {
+    margin-top: 15px;
+}
+
+.div-funciones ul li {
+    list-style: none;
+}
+
+
+.div-educacion h4 {
+    display: inline-block;
+    width: 60%;
+    color: #c772ffd7;
+}
+
+.div-educacion p {
+    display: inline-block;
+    width: 20%;
+    color: #a3a3a3;
+}
+
+.div-instituto {
+    color: rgb(211, 211, 211);
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+.div-detalles ul li {
+    list-style: none;
+}
+
+.curriculum .fila .col h4 {
+    cursor: default;
+    margin-left: 40px;
+}
+
+
+.div-competencias .fila .col ul p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.div-competencias .fila .col ul p:hover {
+    color: #4043ffd8;
+    cursor: default;
+}
+
+.div-competencias .fila .col ul h4 i {
+    color: rgb(255, 255, 255);
+}
+
+.div-lenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.div-lenguajes .lenguajes {
+    width: 70px;
+    height: 70px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-lenguajes .lenguajes img {
+    width: 100%;
+}
+
+.div-lenguajes .lenguajes i {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-lenguajes .lenguajes:hover {
+    transform: scale(1.1);
+}
+
+.div-lenguajes .lenguajes:hover i {
+    transform: scale(1.2);
+}
+
+.div-aptitudes {
+    margin: 15px;
+}
+
+.div-aptitudes .aptitudes{
+    margin-top:10px;
+}
+
+.div-cursos h5 {
+    display: inline-block;
+    width: 600px;
+    color: #c772ffd7;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.div-cursos p {
+    display: inline-block;
+    width: 200px;
+    color: #a3a3a3;
+}
+
+.div-curso {
+    color: rgb(211, 211, 211);
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+.curriculum button {
+    cursor: pointer;
+    background-color: rgb(179, 179, 179);
+    border: 1px solid rgb(88, 91, 255);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.curriculum button a {
+    color: rgb(88, 91, 255);
+    text-decoration: none;
+}
+
+.curriculum button i {
+    margin-left: 10px;
+}
+
+
+/*---------------------------------------------PORTFOLIO-------------------------------------------*/
+
+
+#portfolio {
+    background-color: rgba(255, 255, 255, 0.966);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 100%;
+}
+
+.portfolio .div-portfolio {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.portfolio h2 {
+    font-size: 28px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding: 15px 0;
+    transition: .5s;
+    cursor: default;
+}
+
+.portfolio h2:hover {
+    color: #4043ffd8;
+
+}
+
+.portfolio .div-portfolio p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio .fila {
+    display: flex;
+}
+
+.portfolio .fila .col {
+    width: 100%;
+}
+
+.portfolio .fila .col h3 {
+    font-size: 22px;
+    font-family: 'Raleway';
+    transition: .5s;
+    margin-bottom: 15px;
+    color: #ae35ffd7;
+}
+
+.portfolio .fila .col h3:hover {
+    cursor: default;
+}
+
+.div-fotos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-fotos ul li .foto {
+    margin: 15px 15px 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.portfolio button {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(88, 91, 255);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.portfolio button a {
+    color: rgb(88, 91, 255);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones button {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------------------------------------------ICONOS--------------------------------------------*/
+
+
+ul {
+    list-style: none;
+}
+
+.example-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 20px;
+}
+
+.example-2 .icon-content {
+    margin: 5px 5px;
+    position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+}
+
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: 70px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.example-2 .icon-content a:hover {
+    color: white;
+}
+
+.example-2 .icon-content a .filled {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
+    background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+}
+
+.example-2 .icon-content a[data-social="salesforce"] .filled,
+.example-2 .icon-content a[data-social="salesforce"]~.tooltip {
+    background-color: #50b0e7;
+}
+
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .div-header header {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+
+    .nav-responsive {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+    .menu .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+    }
+
+    .menu .nav ul li {
+        width: 100%;
+    }
+
+    .redes {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3,
+    h4 {
+        font-size: 16px;
+    }
+
+    .section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .inicio .div-banner {
+        width: 100%;
+    }
+
+    #inicio {
+        width: 100%;
+        height: 70%;
+        padding:20px;    }
+
+    #sobremi,
+    #curriculum,
+    #portfolio {
+        width: 100%;
+    }
+
+    .sobremi .fila,
+    .curriculum .fila,
+    .portfolio .fila {
+        flex-direction: column;
+    }
+
+    .sobremi .fila .col-datos,
+    .sobremi .fila .col-objetivos,
+    .curriculum .fila .col,
+    .portfolio .fila .col {
+        width: 100%;
+    }
+
+    .sobremi .fila .col-objetivos {
+        margin-top: 10px;
+    }
+
+    .example-2 {
+        display: none;
+    }
+
+    .div-educacion .fila .col h4 {
+        width: 85%;
+    }
+
+    .div-educacion .fila .col p {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .div-explaboral .fila .col h4 {
+        width: 85%;
+    }
+
+    .div-explaboral .fila .col p {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+
+    .div-lenguajes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-lenguajes .lenguajes {
+        color: rgb(255, 255, 255);
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-lenguajes .lenguajes img {
+        width: 80%;
+    }
+
+    .div-lenguajes .lenguajes i {
+        font-size: 16px;
+
+    }
+
+    .div-lenguajes .lenguajes span {
+        margin-top: 10px;
+    }
+
+    .div-cursos p {
+        margin-bottom: 10px;
+    }
+
+    .div-cursos h5 {
+        margin-left: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .portfolio button {
+        font-size: 16px;
+    }
+
+    .botones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botones button {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .lista {
+        display: none;
+    }
+    .lista {
+        flex-direction: column;
+    }
+}
